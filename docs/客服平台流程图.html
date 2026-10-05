@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>电商多 Agent 智能客服平台 · 流程图</title>
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 32px 20px 80px;
+    font-family: "Microsoft YaHei UI", "Microsoft YaHei", "PingFang SC", system-ui, sans-serif;
+    background: #f5f6fa; color: #1f2430; line-height: 1.6;
+  }
+  .wrap { max-width: 1180px; margin: 0 auto; }
+  h1 { font-size: 26px; margin: 0 0 6px; }
+  .sub { color: #5b6472; font-size: 14px; margin-bottom: 26px; }
+  .badge { display: inline-block; background: #e8efff; color: #2f5bd6; border-radius: 999px;
+           padding: 2px 12px; font-size: 12px; margin-left: 8px; vertical-align: 3px; }
+  .card { background: #fff; border: 1px solid #e4e7ef; border-radius: 14px;
+          padding: 22px 24px; margin: 0 0 26px; box-shadow: 0 2px 10px rgba(30,40,90,.05); overflow-x: auto; }
+  .card h2 { font-size: 18px; margin: 0 0 4px; }
+  .card .desc { color: #6a7280; font-size: 13px; margin: 0 0 14px; }
+  .mermaid { text-align: center; min-width: 640px; }
+  .note { background: #fffbe8; border: 1px solid #f0e3b2; border-radius: 10px;
+          padding: 12px 16px; font-size: 13px; color: #6a5a1f; margin-bottom: 26px; }
+  footer { color: #98a0ae; font-size: 12px; text-align: center; margin-top: 40px; }
+  code { background:#eef1f7; border-radius:4px; padding:1px 5px; font-size:12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>电商多 Agent 智能客服平台 <span class="badge">流程图 v0.1</span></h1>
+  <div class="sub">
+    基于 LangGraph 的多 Agent 智能客服平台 ·
+    基座：EduAgent_Pro · 借鉴：SmartVoyage（A2A / MCP） · 2026-10-03
+  </div>
+
+  <div class="note">
+    阅读顺序：<b>图 1</b> 看整体分层 → <b>图 2</b> 看一条消息的完整旅程（含多意图并行与转人工）→
+    <b>图 3</b> 看最复杂的退款 HitL 子流程 → <b>图 4</b> 看实施路线。
+    文字版方案见同目录 <code>客服平台总体方案与流程图.md</code>。
+  </div>
+
+  <div class="card">
+    <h2>图 1 · 总体架构</h2>
+    <p class="desc">五层结构：接入 → 网关 → 编排 → Agent → 工具与数据；横切容错贯穿全链路。</p>
+    <pre class="mermaid">
+flowchart TB
+    subgraph L1["接入层｜Vue3 客服工作台"]
+        direction LR
+        C1["用户对话页<br/>路由卡片 / 订单卡片 / 流式回复"]
+        C2["主管工作台<br/>HitL 审批 / 未解决问题池"]
+    end
+
+    subgraph L2["网关层｜FastAPI :8000"]
+        direction LR
+        G1["JWT 鉴权 + 技能路由<br/>POST /api/v1/chat/stream"]
+        G2["SSE 事件协议<br/>routing / progress / token / meta / done"]
+        G3["MCP 子应用挂载 /mcp/*"]
+    end
+
+    subgraph L3["编排层｜Orchestrator"]
+        direction LR
+        O1["① 规则前置拦截<br/>零 Token"]
+        O2["② LLM 意图识别<br/>+ 多意图拆分"]
+        O3["③ 缺参检测<br/>结构化追问"]
+        O4["④ 条件边路由<br/>single / parallel / pipeline / human"]
+    end
+
+    subgraph L4["Agent 层｜LangGraph StateGraph（checkpointer + thread_id）"]
+        direction LR
+        A1["商品咨询 Agent<br/>RAG 状态机"]
+        A2["订单/物流 Agent<br/>槽位抽取 → MCP 查询"]
+        A3["售后/退款 Agent<br/>规则审核 → HitL 审批"]
+        A4["投诉/转人工 Agent<br/>情绪识别 → 升级人工"]
+    end
+
+    subgraph L5["工具与数据层"]
+        direction LR
+        T1["MCP 工具服务<br/>订单/物流/退货/库存<br/>FastMCP · streamable-http"]
+        T2["A2A RAG Agent<br/>独立知识库服务<br/>python-a2a"]
+        T3[("Milvus<br/>BGE-M3 混合检索<br/>+ Reranker")]
+        T4[("PostgreSQL<br/>订单/工单/会话/审批")]
+        T5[("Redis<br/>缓存/幂等（决策 D3）")]
+    end
+
+    X["横切能力｜三层容错：自动重试 → Agent 降级 → 系统兜底 · 结构化日志 · 审计"]
+
+    L1 --> L2
+    L2 --> L3
+    L3 --> L4
+    A1 & A2 & A3 & A4 --> L5
+    L5 -.-> X
+    </pre>
+  </div>
+
+  <div class="card">
+    <h2>图 2 · 主链路流程（一条消息的旅程）</h2>
+    <p class="desc">规则前置 → 意图识别 → 多意图拆分/缺参追问 → 技能路由 → 汇总 → SSE 流式返回。</p>
+    <pre class="mermaid">
+flowchart TD
+    U(["用户消息"]) --> API["POST /api/v1/chat/stream<br/>JWT 鉴权"]
+    API --> PF{"规则前置拦截"}
+    PF -->|"问候 / 感谢 / 要人工"| FAST["模板直答 或 直接转人工<br/>零 Token"]
+    PF -->|"业务问题"| IR["LLM 意图识别<br/>+ 多意图拆分 + 槽位抽取"]
+    IR --> MULTI{"多意图？"}
+    MULTI -->|"否"| SLOT{"槽位齐全？"}
+    MULTI -->|"是"| PAR["asyncio.gather 并行调度<br/>各 Agent 独立 State 命名空间"]
+    SLOT -->|"缺订单号/手机号"| ASK["clarify 结构化追问"] --> U
+    SLOT -->|"齐全"| RT{"条件边路由"}
+    PAR --> RT
+    RT --> A1["商品咨询<br/>RAG 检索 + 置信度分流"]
+    RT --> A2["订单/物流<br/>MCP 查询 + 卡片生成"]
+    RT --> A3["售后/退款<br/>规则审核"]
+    RT --> A4["投诉<br/>情绪识别 + 安抚"]
+    A1 -->|"低置信"| HUMAN["转人工<br/>交接摘要 + 未解决问题池"]
+    A3 -->|"金额超阈值 / 异常"| HITL{"interrupt 暂停<br/>主管审批"}
+    HITL -->|"approve / modify"| A3
+    A3 -->|"自动通过 或 审批通过"| MCPW["MCP 创建退货/退款工单"]
+    A4 -->|"高危词 / 负向情绪"| HUMAN
+    A1 & A2 & A3 & A4 --> AGG["汇总：去重 · 冲突检测 · 幻觉校验"]
+    MCPW --> AGG
+    AGG --> SSE["SSE 流式返回"] --> U
+    </pre>
+  </div>
+
+  <div class="card">
+    <h2>图 3 · 关键子流程：退款审批 HitL（时序图）</h2>
+    <p class="desc">复刻 EduAgent 试卷批改的 interrupt / resume 全链路：冻结图 → 主管审批 → 恢复执行 → 创建工单。</p>
+    <pre class="mermaid">
+sequenceDiagram
+    autonumber
+    participant U as 用户
+    participant API as FastAPI 统一入口
+    participant O as Orchestrator
+    participant G as 售后 Agent 图
+    participant M as MCP 订单工具
+    participant S as 主管工作台
+
+    U->>API: “耳机拆封想退，订单 A1024”
+    API->>O: 意图 = 售后/退款
+    O->>G: 条件边路由
+    G->>M: get_order(A1024) + check_return_eligibility
+    M-->>G: 订单信息 + 可退判定
+    G->>G: 金额 699 > 阈值 500 → 需审批
+    G-->>API: interrupt（待审批材料）
+    API-->>S: 工单出现在“待审批”列表
+    S->>API: POST /aftersale/{id}/confirm（approve/modify）
+    API->>G: Command(resume=decision)
+    G->>M: create_return_ticket(A1024)
+    M-->>G: 工单号 RT-2026-xxxx
+    G-->>U: 退货方案 + 退款时效（SSE 流式）
+    </pre>
+  </div>
+
+  <div class="card">
+    <h2>图 4 · 实施路线（P0 → P6）</h2>
+    <p class="desc">每个阶段都有独立验收标准；A2A / 前端 / 评测可按资源裁剪。</p>
+    <pre class="mermaid">
+flowchart LR
+    P0["P0 环境与基线<br/>跑通 EduAgent"] --> P1["P1 数据与知识库<br/>电商表 + FAQ + 分类器"]
+    P1 --> P2["P2 MCP 工具服务<br/>订单/物流/退货"]
+    P2 --> P3["P3 四 Agent 改造<br/>咨询/订单/售后/投诉"]
+    P3 --> P4["P4 Orchestrator<br/>多意图并行 + 转人工闭环"]
+    P4 --> P5["P5 A2A RAG Agent<br/>知识库解耦"]
+    P5 --> P6["P6 前端 + 评测 + 部署<br/>实测数字"]
+    </pre>
+  </div>
+
+  <footer>生成于 OpenCode · 2026-10-03 · 图示为方案 v0.1，待确认后进入实施</footer>
+</div>
+
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: "base",
+    themeVariables: {
+      fontFamily: '"Microsoft YaHei UI","Microsoft YaHei","PingFang SC",sans-serif',
+      fontSize: "14px",
+      primaryColor: "#eef3ff",
+      primaryBorderColor: "#7f9bdd",
+      primaryTextColor: "#1f2430",
+      lineColor: "#8a93a6",
+      secondaryColor: "#f6f7fb",
+      tertiaryColor: "#ffffff"
+    },
+    flowchart: { curve: "basis", nodeSpacing: 26, rankSpacing: 34, useMaxWidth: true },
+    sequence: { useMaxWidth: true, actorMargin: 44 }
+  });
+</script>
+</body>
+</html>

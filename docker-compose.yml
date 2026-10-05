@@ -1,0 +1,123 @@
+# docker-compose.yml — EduAgent 本地开发环境（精简版）
+# 启动：docker-compose --env-file .env.local up -d
+# docker volume ls 列出所有卷
+# docker volume inspect 卷名 查看卷详情
+version: "3.9"
+
+services:
+  # ── PostgreSQL 主数据库（对外 5433，本机 5432 已占用）──
+  postgres:
+    image: postgres:15-alpine
+    container_name: edu_agent_postgres
+    # 跟随docker一起启动，服务崩溃时，自动重启(最常用)
+    restart: unless-stopped
+    environment:
+      # 指定环境变量.env文件时会自动读取。
+      # 本项目文件为.env.local，无法识别里面环境变量。因此需要手动指定环境变量文件
+      # 前端规范： .env 为公共环境变量，.env.local 开发者私有敏感文件，禁止提交代码
+      POSTGRES_DB: ${DB_NAME:-eduagent}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      # 容器首次启动时自动执行建表脚本（见 3.2 节）
+      # Postgres 官方镜像特殊约定目录。用于在数据库没有数据时自动执行sql语句进行建表
+      - ./scripts/init_db.sql:/docker-entrypoint-initdb.d/01_init_db.sql:ro
+    ports:
+      - "5433:5432"  # 宿主机:
+    # 健康检查
+    healthcheck:
+      # 通过shell 执行 pg_isready -U eduagent_user -d eduagent
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER} -d ${DB_NAME:-eduagent}"]
+      interval: 10s  # 检查间隔时间
+      timeout: 5s  # 检查超时时间
+      retries: 5  # 检查重试次数
+  # milvus由三大块构成：etcd、MinIO、Milvus，分别存储元数据、向量数据和业务逻辑。
+  # 类比Milvus是图书馆管理员，接收读者请求一本具体的书，查目录 (etcd)，去书库 (minio) 拿书。
+  # ── etcd（Milvus 元数据存储，仅内部使用，不对外暴露端口）──
+  etcd:
+    image: quay.io/coreos/etcd:v3.5.14
+    container_name: edu_agent_etcd
+    restart: unless-stopped
+    environment:
+      # 每一次写入都会产生一个新版本，时间久了会占用大量内存
+      # revision 保留最近的N个版本
+      # N = 1000
+      # 最大运行占额 为 4GB
+      ETCD_AUTO_COMPACTION_MODE: revision
+      ETCD_AUTO_COMPACTION_RETENTION: "1000"
+      ETCD_QUOTA_BACKEND_BYTES: "4294967296"
+      # 配置服务地址，客户端通过该地址访问etcd
+      # http://容器的ip:2379
+    command: >
+      etcd
+      --advertise-client-urls=http://127.0.0.1:2379  
+      --listen-client-urls=http://0.0.0.0:2379
+      --data-dir=/etcd
+    volumes:
+      - etcd_data:/etcd
+
+  # ── MinIO（Milvus 向量文件存储，仅内部使用，不对外暴露端口）──
+  minio:
+    image: minio/minio:latest
+    container_name: edu_agent_minio
+    restart: unless-stopped
+    command: server /data
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ACCESS_KEY:-minioadmin}
+      MINIO_ROOT_PASSWORD: ${MINIO_SECRET_KEY:-minioadmin}
+    volumes:
+      - minio_data:/data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+
+  # ── Milvus 向量数据库（对外 19531，本机 19530 已占用）──
+  milvus:
+    image: milvusdb/milvus:v2.4.0
+    container_name: edu_agent_milvus
+    restart: unless-stopped
+    # 各个版本介绍 https://milvus.io/docs/zh/install-overview.md
+    command: ["milvus", "run", "standalone"]
+    environment:
+      ETCD_ENDPOINTS: etcd:2379                 # 连内部 etcd
+      MINIO_ADDRESS: minio:9000                 # 连内部 MinIO
+      MINIO_ACCESS_KEY_ID: ${MINIO_ACCESS_KEY:-minioadmin}
+      MINIO_SECRET_ACCESS_KEY: ${MINIO_SECRET_KEY:-minioadmin}
+    volumes:
+      - milvus_data:/var/lib/milvus
+    ports:
+      - "19531:19530"
+    # 设置等待条件，等待 etcd 启动并运行正常，等待 minio 健康
+    depends_on:
+      etcd:
+        condition: service_started
+      minio:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9091/healthz"]
+      interval: 15s
+      timeout: 10s
+      retries: 10
+
+  # ── Redis（P6：缓存 / 幂等 / 监控指标）──
+  redis:
+    image: redis:7-alpine
+    container_name: edu_agent_redis
+    restart: unless-stopped
+    ports:
+      - "6380:6379"  # 本机 6379 可能被占用，隔离到 6380
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+# ── 数据卷（持久化，重启容器数据不丢失）──
+volumes:
+  postgres_data:
+  etcd_data:
+  minio_data:
+  milvus_data:

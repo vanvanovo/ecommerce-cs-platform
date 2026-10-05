@@ -1,0 +1,275 @@
+{"text": "这款27 英寸 2K 显示器多少钱？", "category": "normal", "intents": ["product"], "slots": {}, "need_clarify": false, "id": "E0001"}
+{"text": "蓝牙音箱 Mini支持七天无理由退货吗？", "category": "normal", "intents": ["product"], "slots": {}, "need_clarify": false, "id": "E0002"}
+{"text": "无线蓝牙耳机 Pro保修多久？", "category": "normal", "intents": ["product"], "slots": {}, "need_clarify": false, "id": "E0003"}
+{"text": "你们有什么显示器推荐？", "category": "normal", "intents": ["product"], "slots": {}, "need_clarify": false, "id": "E0004"}
+{"text": "智能手表 S2和同类产品比有什么优势？", "category": "normal", "intents": ["product"], "slots": {}, "need_clarify": false, "id": "E0005"}
+{"text": "我想看下智能空气炸锅的参数", "category": "normal", "intents": ["product"], "slots": {}, "need_clarify": false, "id": "E0006"}
+{"text": "声波电动牙刷现在有货吗？", "category": "normal", "intents": ["product"], "slots": {}, "need_clarify": false, "id": "E0007"}
+{"text": "无线蓝牙耳机 Pro适合送人吗？", "category": "normal", "intents": ["product"], "slots": {}, "need_clarify": false, "id": "E0008"}
+{"text": "机械键盘类目里最值得买的是哪个？", "category": "normal", "intents": ["product"], "slots": {}, "need_clarify": false, "id": "E0009"}
+{"text": "智能手表 S2耗电快不快？", "category": "normal", "intents": ["product"], "slots": {}, "need_clarify": false, "id": "E0010"}
+{"text": "智能手表 S2颜色有哪些？", "category": "normal", "intents": ["product"], "slots": {}, "need_clarify": false, "id": "E0011"}
+{"text": "蓝牙音箱 Mini实际体验怎么样？", "category": "normal", "intents": ["product"], "slots": {}, "need_clarify": false, "id": "E0012"}
+{"text": "这个显示器能用多久？", "category": "normal", "intents": ["product"], "slots": {}, "need_clarify": false, "id": "E0013"}
+{"text": "智能手表 S2支持分期吗？", "category": "normal", "intents": ["product"], "slots": {}, "need_clarify": false, "id": "E0014"}
+{"text": "IH 电饭煲支持以旧换新吗？", "category": "normal", "intents": ["product"], "slots": {}, "need_clarify": false, "id": "E0015"}
+{"text": "这款智能空气炸锅多少钱？", "category": "normal", "intents": ["product"], "slots": {}, "need_clarify": false, "id": "E0016"}
+{"text": "智能空气炸锅支持七天无理由退货吗？", "category": "normal", "intents": ["product"], "slots": {}, "need_clarify": false, "id": "E0017"}
+{"text": "蓝牙音箱 Mini保修多久？", "category": "normal", "intents": ["product"], "slots": {}, "need_clarify": false, "id": "E0018"}
+{"text": "你们有什么蓝牙耳机推荐？", "category": "normal", "intents": ["product"], "slots": {}, "need_clarify": false, "id": "E0019"}
+{"text": "声波电动牙刷和同类产品比有什么优势？", "category": "normal", "intents": ["product"], "slots": {}, "need_clarify": false, "id": "E0020"}
+{"text": "我想看下游戏鼠标的参数", "category": "normal", "intents": ["product"], "slots": {}, "need_clarify": false, "id": "E0021"}
+{"text": "便携充电宝现在有货吗？", "category": "normal", "intents": ["product"], "slots": {}, "need_clarify": false, "id": "E0022"}
+{"text": "智能手表 S2适合送人吗？", "category": "normal", "intents": ["product"], "slots": {}, "need_clarify": false, "id": "E0023"}
+{"text": "显示器类目里最值得买的是哪个？", "category": "normal", "intents": ["product"], "slots": {}, "need_clarify": false, "id": "E0024"}
+{"text": "平板支架耗电快不快？", "category": "normal", "intents": ["product"], "slots": {}, "need_clarify": false, "id": "E0025"}
+{"text": "便携充电宝颜色有哪些？", "category": "normal", "intents": ["product"], "slots": {}, "need_clarify": false, "id": "E0026"}
+{"text": "智能空气炸锅实际体验怎么样？", "category": "normal", "intents": ["product"], "slots": {}, "need_clarify": false, "id": "E0027"}
+{"text": "这个智能手表能用多久？", "category": "normal", "intents": ["product"], "slots": {}, "need_clarify": false, "id": "E0028"}
+{"text": "27 英寸 2K 显示器支持分期吗？", "category": "normal", "intents": ["product"], "slots": {}, "need_clarify": false, "id": "E0029"}
+{"text": "声波电动牙刷支持以旧换新吗？", "category": "normal", "intents": ["product"], "slots": {}, "need_clarify": false, "id": "E0030"}
+{"text": "帮我查一下订单A1004", "category": "normal", "intents": ["order"], "slots": {"order_id": "A1004"}, "need_clarify": false, "id": "E0031"}
+{"text": "订单A1033买的是什么？", "category": "normal", "intents": ["order"], "slots": {"order_id": "A1033"}, "need_clarify": false, "id": "E0032"}
+{"text": "订单A1029现在什么状态？", "category": "normal", "intents": ["order"], "slots": {"order_id": "A1029"}, "need_clarify": false, "id": "E0033"}
+{"text": "我上周下的单怎么还没动静？", "category": "normal", "intents": ["order"], "slots": {}, "need_clarify": false, "id": "E0034"}
+{"text": "订单A1031总共花了多少钱？", "category": "normal", "intents": ["order"], "slots": {"order_id": "A1031"}, "need_clarify": false, "id": "E0035"}
+{"text": "帮我看看A1016这单付款成功没", "category": "normal", "intents": ["order"], "slots": {"order_id": "A1016"}, "need_clarify": false, "id": "E0036"}
+{"text": "最近一笔订单到哪一步了？", "category": "normal", "intents": ["order"], "slots": {}, "need_clarify": false, "id": "E0037"}
+{"text": "订单A1006能帮我取消吗？", "category": "normal", "intents": ["order"], "slots": {"order_id": "A1006"}, "need_clarify": false, "id": "E0038"}
+{"text": "帮我核对下订单A1035的地址", "category": "normal", "intents": ["order"], "slots": {"order_id": "A1035"}, "need_clarify": false, "id": "E0039"}
+{"text": "订单A1048的收货地址是哪？", "category": "normal", "intents": ["order"], "slots": {"order_id": "A1048"}, "need_clarify": false, "id": "E0040"}
+{"text": "订单A1040能开发票吗？", "category": "normal", "intents": ["order"], "slots": {"order_id": "A1040"}, "need_clarify": false, "id": "E0041"}
+{"text": "我想改订单A1034的收货信息", "category": "normal", "intents": ["order"], "slots": {"order_id": "A1034"}, "need_clarify": false, "id": "E0042"}
+{"text": "订单A1022用的什么优惠？", "category": "normal", "intents": ["order"], "slots": {"order_id": "A1022"}, "need_clarify": false, "id": "E0043"}
+{"text": "帮我查一下订单A1028", "category": "normal", "intents": ["order"], "slots": {"order_id": "A1028"}, "need_clarify": false, "id": "E0044"}
+{"text": "订单A1005买的是什么？", "category": "normal", "intents": ["order"], "slots": {"order_id": "A1005"}, "need_clarify": false, "id": "E0045"}
+{"text": "订单A1038现在什么状态？", "category": "normal", "intents": ["order"], "slots": {"order_id": "A1038"}, "need_clarify": false, "id": "E0046"}
+{"text": "订单A1023总共花了多少钱？", "category": "normal", "intents": ["order"], "slots": {"order_id": "A1023"}, "need_clarify": false, "id": "E0047"}
+{"text": "帮我看看A1039这单付款成功没", "category": "normal", "intents": ["order"], "slots": {"order_id": "A1039"}, "need_clarify": false, "id": "E0048"}
+{"text": "订单A1018能帮我取消吗？", "category": "normal", "intents": ["order"], "slots": {"order_id": "A1018"}, "need_clarify": false, "id": "E0049"}
+{"text": "帮我核对下订单A1044的地址", "category": "normal", "intents": ["order"], "slots": {"order_id": "A1044"}, "need_clarify": false, "id": "E0050"}
+{"text": "订单A1043能开发票吗？", "category": "normal", "intents": ["order"], "slots": {"order_id": "A1043"}, "need_clarify": false, "id": "E0051"}
+{"text": "我想改订单A1030的收货信息", "category": "normal", "intents": ["order"], "slots": {"order_id": "A1030"}, "need_clarify": false, "id": "E0052"}
+{"text": "订单A1026用的什么优惠？", "category": "normal", "intents": ["order"], "slots": {"order_id": "A1026"}, "need_clarify": false, "id": "E0053"}
+{"text": "帮我查一下订单A1002", "category": "normal", "intents": ["order"], "slots": {"order_id": "A1002"}, "need_clarify": false, "id": "E0054"}
+{"text": "订单A1011买的是什么？", "category": "normal", "intents": ["order"], "slots": {"order_id": "A1011"}, "need_clarify": false, "id": "E0055"}
+{"text": "订单A1033现在什么状态？", "category": "normal", "intents": ["order"], "slots": {"order_id": "A1033"}, "need_clarify": false, "id": "E0056"}
+{"text": "订单A1009的快递到哪了？", "category": "normal", "intents": ["logistics"], "slots": {"order_id": "A1009"}, "need_clarify": false, "id": "E0057"}
+{"text": "物流A1027怎么三天没更新了？", "category": "normal", "intents": ["logistics"], "slots": {"order_id": "A1027"}, "need_clarify": false, "id": "E0058"}
+{"text": "我的包裹什么时候能到？", "category": "normal", "intents": ["logistics"], "slots": {}, "need_clarify": false, "id": "E0059"}
+{"text": "订单A1030显示已发货但查不到轨迹", "category": "normal", "intents": ["logistics"], "slots": {"order_id": "A1030"}, "need_clarify": false, "id": "E0060"}
+{"text": "快递A1018为什么一直停在转运中心？", "category": "normal", "intents": ["logistics"], "slots": {"order_id": "A1018"}, "need_clarify": false, "id": "E0061"}
+{"text": "发什么快递？几天能到货？", "category": "normal", "intents": ["logistics"], "slots": {}, "need_clarify": false, "id": "E0062"}
+{"text": "订单A1018派送中多久能送到？", "category": "normal", "intents": ["logistics"], "slots": {"order_id": "A1018"}, "need_clarify": false, "id": "E0063"}
+{"text": "包裹A1023现在到哪个城市了？", "category": "normal", "intents": ["logistics"], "slots": {"order_id": "A1023"}, "need_clarify": false, "id": "E0064"}
+{"text": "订单A1015今天能送到吗？", "category": "normal", "intents": ["logistics"], "slots": {"order_id": "A1015"}, "need_clarify": false, "id": "E0065"}
+{"text": "物流信息一直没动，帮我催一下", "category": "normal", "intents": ["logistics"], "slots": {}, "need_clarify": false, "id": "E0066"}
+{"text": "订单A1015显示签收了但我没收到", "category": "normal", "intents": ["logistics"], "slots": {"order_id": "A1015"}, "need_clarify": false, "id": "E0067"}
+{"text": "A1001大概几天能到？", "category": "normal", "intents": ["logistics"], "slots": {"order_id": "A1001"}, "need_clarify": false, "id": "E0068"}
+{"text": "订单A1012什么时候发货？", "category": "normal", "intents": ["logistics"], "slots": {"order_id": "A1012"}, "need_clarify": false, "id": "E0069"}
+{"text": "订单A1001的快递到哪了？", "category": "normal", "intents": ["logistics"], "slots": {"order_id": "A1001"}, "need_clarify": false, "id": "E0070"}
+{"text": "物流A1036怎么三天没更新了？", "category": "normal", "intents": ["logistics"], "slots": {"order_id": "A1036"}, "need_clarify": false, "id": "E0071"}
+{"text": "订单A1009显示已发货但查不到轨迹", "category": "normal", "intents": ["logistics"], "slots": {"order_id": "A1009"}, "need_clarify": false, "id": "E0072"}
+{"text": "快递A1041为什么一直停在转运中心？", "category": "normal", "intents": ["logistics"], "slots": {"order_id": "A1041"}, "need_clarify": false, "id": "E0073"}
+{"text": "订单A1031派送中多久能送到？", "category": "normal", "intents": ["logistics"], "slots": {"order_id": "A1031"}, "need_clarify": false, "id": "E0074"}
+{"text": "包裹A1037现在到哪个城市了？", "category": "normal", "intents": ["logistics"], "slots": {"order_id": "A1037"}, "need_clarify": false, "id": "E0075"}
+{"text": "订单A1027今天能送到吗？", "category": "normal", "intents": ["logistics"], "slots": {"order_id": "A1027"}, "need_clarify": false, "id": "E0076"}
+{"text": "订单A1027显示签收了但我没收到", "category": "normal", "intents": ["logistics"], "slots": {"order_id": "A1027"}, "need_clarify": false, "id": "E0077"}
+{"text": "A1005大概几天能到？", "category": "normal", "intents": ["logistics"], "slots": {"order_id": "A1005"}, "need_clarify": false, "id": "E0078"}
+{"text": "订单A1011什么时候发货？", "category": "normal", "intents": ["logistics"], "slots": {"order_id": "A1011"}, "need_clarify": false, "id": "E0079"}
+{"text": "订单A1040的快递到哪了？", "category": "normal", "intents": ["logistics"], "slots": {"order_id": "A1040"}, "need_clarify": false, "id": "E0080"}
+{"text": "物流A1001怎么三天没更新了？", "category": "normal", "intents": ["logistics"], "slots": {"order_id": "A1001"}, "need_clarify": false, "id": "E0081"}
+{"text": "订单A1025显示已发货但查不到轨迹", "category": "normal", "intents": ["logistics"], "slots": {"order_id": "A1025"}, "need_clarify": false, "id": "E0082"}
+{"text": "订单A1005我要退货", "category": "normal", "intents": ["aftersale"], "slots": {"order_id": "A1005"}, "need_clarify": false, "id": "E0083"}
+{"text": "平板支架拆封了还能退吗？", "category": "normal", "intents": ["aftersale"], "slots": {}, "need_clarify": false, "id": "E0084"}
+{"text": "退款一般多久到账？", "category": "normal", "intents": ["aftersale"], "slots": {}, "need_clarify": false, "id": "E0085"}
+{"text": "以旧换新怎么操作？", "category": "normal", "intents": ["aftersale"], "slots": {}, "need_clarify": false, "id": "E0086"}
+{"text": "订单A1040申请退款怎么操作？", "category": "normal", "intents": ["aftersale"], "slots": {"order_id": "A1040"}, "need_clarify": false, "id": "E0087"}
+{"text": "保修期内坏了怎么维修？", "category": "normal", "intents": ["aftersale"], "slots": {}, "need_clarify": false, "id": "E0088"}
+{"text": "订单A1033想换个新的", "category": "normal", "intents": ["aftersale"], "slots": {"order_id": "A1033"}, "need_clarify": false, "id": "E0089"}
+{"text": "无理由退货运费谁出？", "category": "normal", "intents": ["aftersale"], "slots": {}, "need_clarify": false, "id": "E0090"}
+{"text": "扫地机器人 X10退货要包装盒吗？", "category": "normal", "intents": ["aftersale"], "slots": {}, "need_clarify": false, "id": "E0091"}
+{"text": "订单A1007退款到哪张卡？", "category": "normal", "intents": ["aftersale"], "slots": {"order_id": "A1007"}, "need_clarify": false, "id": "E0092"}
+{"text": "订单A1017怎么申请退货？", "category": "normal", "intents": ["aftersale"], "slots": {"order_id": "A1017"}, "need_clarify": false, "id": "E0093"}
+{"text": "换货运费谁承担？", "category": "normal", "intents": ["aftersale"], "slots": {}, "need_clarify": false, "id": "E0094"}
+{"text": "退款审核要多久？", "category": "normal", "intents": ["aftersale"], "slots": {}, "need_clarify": false, "id": "E0095"}
+{"text": "订单A1035的退款进度查一下", "category": "normal", "intents": ["aftersale"], "slots": {"order_id": "A1035"}, "need_clarify": false, "id": "E0096"}
+{"text": "拆封了还能换货吗？", "category": "normal", "intents": ["aftersale"], "slots": {}, "need_clarify": false, "id": "E0097"}
+{"text": "订单A1002我要退货", "category": "normal", "intents": ["aftersale"], "slots": {"order_id": "A1002"}, "need_clarify": false, "id": "E0098"}
+{"text": "手机壳拆封了还能退吗？", "category": "normal", "intents": ["aftersale"], "slots": {}, "need_clarify": false, "id": "E0099"}
+{"text": "订单A1035申请退款怎么操作？", "category": "normal", "intents": ["aftersale"], "slots": {"order_id": "A1035"}, "need_clarify": false, "id": "E0100"}
+{"text": "订单A1036想换个新的", "category": "normal", "intents": ["aftersale"], "slots": {"order_id": "A1036"}, "need_clarify": false, "id": "E0101"}
+{"text": "27 英寸 2K 显示器退货要包装盒吗？", "category": "normal", "intents": ["aftersale"], "slots": {}, "need_clarify": false, "id": "E0102"}
+{"text": "订单A1013退款到哪张卡？", "category": "normal", "intents": ["aftersale"], "slots": {"order_id": "A1013"}, "need_clarify": false, "id": "E0103"}
+{"text": "订单A1027怎么申请退货？", "category": "normal", "intents": ["aftersale"], "slots": {"order_id": "A1027"}, "need_clarify": false, "id": "E0104"}
+{"text": "订单A1048的退款进度查一下", "category": "normal", "intents": ["aftersale"], "slots": {"order_id": "A1048"}, "need_clarify": false, "id": "E0105"}
+{"text": "你们服务太差了，我要投诉", "category": "normal", "intents": ["complaint"], "slots": {}, "need_clarify": false, "id": "E0106"}
+{"text": "再不解决我就去12315投诉", "category": "normal", "intents": ["complaint"], "slots": {}, "need_clarify": false, "id": "E0107"}
+{"text": "我要给差评并且曝光你们", "category": "normal", "intents": ["complaint"], "slots": {}, "need_clarify": false, "id": "E0108"}
+{"text": "催了三次都没人理，什么破服务", "category": "normal", "intents": ["complaint"], "slots": {}, "need_clarify": false, "id": "E0109"}
+{"text": "客服态度特别差，我要投诉他", "category": "normal", "intents": ["complaint"], "slots": {}, "need_clarify": false, "id": "E0110"}
+{"text": "退款拖了半个月，我要投诉", "category": "normal", "intents": ["complaint"], "slots": {}, "need_clarify": false, "id": "E0111"}
+{"text": "你们这是欺诈，我要去平台投诉", "category": "normal", "intents": ["complaint"], "slots": {}, "need_clarify": false, "id": "E0112"}
+{"text": "买东西体验极差，考虑投诉", "category": "normal", "intents": ["complaint"], "slots": {}, "need_clarify": false, "id": "E0113"}
+{"text": "我要投诉你们客服", "category": "normal", "intents": ["complaint"], "slots": {}, "need_clarify": false, "id": "E0114"}
+{"text": "这单体验太差，我要投诉到平台", "category": "normal", "intents": ["complaint"], "slots": {}, "need_clarify": false, "id": "E0115"}
+{"text": "再没人处理我就发小红书曝光", "category": "normal", "intents": ["complaint"], "slots": {}, "need_clarify": false, "id": "E0116"}
+{"text": "你们承诺的时间没做到，我要投诉", "category": "normal", "intents": ["complaint"], "slots": {}, "need_clarify": false, "id": "E0117"}
+{"text": "投诉渠道在哪？", "category": "normal", "intents": ["complaint"], "slots": {}, "need_clarify": false, "id": "E0118"}
+{"text": "转人工", "category": "normal", "intents": ["human"], "slots": {}, "need_clarify": false, "id": "E0119"}
+{"text": "我要找人工客服", "category": "normal", "intents": ["human"], "slots": {}, "need_clarify": false, "id": "E0120"}
+{"text": "帮我转接真人", "category": "normal", "intents": ["human"], "slots": {}, "need_clarify": false, "id": "E0121"}
+{"text": "人工客服在哪？", "category": "normal", "intents": ["human"], "slots": {}, "need_clarify": false, "id": "E0122"}
+{"text": "不想跟机器人说，转人工", "category": "normal", "intents": ["human"], "slots": {}, "need_clarify": false, "id": "E0123"}
+{"text": "找客服", "category": "normal", "intents": ["human"], "slots": {}, "need_clarify": false, "id": "E0124"}
+{"text": "我要人工", "category": "normal", "intents": ["human"], "slots": {}, "need_clarify": false, "id": "E0125"}
+{"text": "转接人工客服谢谢", "category": "normal", "intents": ["human"], "slots": {}, "need_clarify": false, "id": "E0126"}
+{"text": "请人工客服回复我", "category": "normal", "intents": ["human"], "slots": {}, "need_clarify": false, "id": "E0127"}
+{"text": "机器人别回复了，转人工", "category": "normal", "intents": ["human"], "slots": {}, "need_clarify": false, "id": "E0128"}
+{"text": "给我接一个客服", "category": "normal", "intents": ["human"], "slots": {}, "need_clarify": false, "id": "E0129"}
+{"text": "你好", "category": "normal", "intents": ["chitchat"], "slots": {}, "need_clarify": false, "id": "E0130"}
+{"text": "在吗？", "category": "normal", "intents": ["chitchat"], "slots": {}, "need_clarify": false, "id": "E0131"}
+{"text": "谢谢", "category": "normal", "intents": ["chitchat"], "slots": {}, "need_clarify": false, "id": "E0132"}
+{"text": "你们几点上班？", "category": "normal", "intents": ["chitchat"], "slots": {}, "need_clarify": false, "id": "E0133"}
+{"text": "早上好", "category": "normal", "intents": ["chitchat"], "slots": {}, "need_clarify": false, "id": "E0134"}
+{"text": "辛苦了", "category": "normal", "intents": ["chitchat"], "slots": {}, "need_clarify": false, "id": "E0135"}
+{"text": "再见", "category": "normal", "intents": ["chitchat"], "slots": {}, "need_clarify": false, "id": "E0136"}
+{"text": "哈喽", "category": "normal", "intents": ["chitchat"], "slots": {}, "need_clarify": false, "id": "E0137"}
+{"text": "谢谢啦", "category": "normal", "intents": ["chitchat"], "slots": {}, "need_clarify": false, "id": "E0138"}
+{"text": "晚上好", "category": "normal", "intents": ["chitchat"], "slots": {}, "need_clarify": false, "id": "E0139"}
+{"text": "你们客服真耐心", "category": "normal", "intents": ["chitchat"], "slots": {}, "need_clarify": false, "id": "E0140"}
+{"text": "节日快乐", "category": "normal", "intents": ["chitchat"], "slots": {}, "need_clarify": false, "id": "E0141"}
+{"text": "我想退货", "category": "vague", "intents": ["aftersale"], "slots": {}, "need_clarify": true, "id": "E0142"}
+{"text": "帮我查一下订单", "category": "vague", "intents": ["order"], "slots": {}, "need_clarify": true, "id": "E0143"}
+{"text": "我的快递好像有问题", "category": "vague", "intents": ["logistics"], "slots": {}, "need_clarify": true, "id": "E0144"}
+{"text": "这个东西坏了怎么办", "category": "vague", "intents": ["aftersale"], "slots": {}, "need_clarify": true, "id": "E0145"}
+{"text": "我要退款", "category": "vague", "intents": ["aftersale"], "slots": {}, "need_clarify": true, "id": "E0146"}
+{"text": "帮我查查物流", "category": "vague", "intents": ["logistics"], "slots": {}, "need_clarify": true, "id": "E0147"}
+{"text": "这个能退吗", "category": "vague", "intents": ["aftersale"], "slots": {}, "need_clarify": true, "id": "E0148"}
+{"text": "我的单子到哪了", "category": "vague", "intents": ["logistics"], "slots": {}, "need_clarify": true, "id": "E0149"}
+{"text": "怎么申请售后", "category": "vague", "intents": ["aftersale"], "slots": {}, "need_clarify": true, "id": "E0150"}
+{"text": "订单有点问题", "category": "vague", "intents": ["order"], "slots": {}, "need_clarify": true, "id": "E0151"}
+{"text": "帮我处理下退货", "category": "vague", "intents": ["aftersale"], "slots": {}, "need_clarify": true, "id": "E0152"}
+{"text": "快递出问题了", "category": "vague", "intents": ["logistics"], "slots": {}, "need_clarify": true, "id": "E0153"}
+{"text": "我想问下我的订单", "category": "vague", "intents": ["order"], "slots": {}, "need_clarify": true, "id": "E0154"}
+{"text": "保修怎么弄", "category": "vague", "intents": ["aftersale"], "slots": {}, "need_clarify": true, "id": "E0155"}
+{"text": "怎么退款呢", "category": "vague", "intents": ["aftersale"], "slots": {}, "need_clarify": true, "id": "E0156"}
+{"text": "查一下我的包裹", "category": "vague", "intents": ["logistics"], "slots": {}, "need_clarify": true, "id": "E0157"}
+{"text": "我想退货但找不到订单号", "category": "vague", "intents": ["aftersale"], "slots": {}, "need_clarify": true, "id": "E0158"}
+{"text": "帮我退下这个", "category": "vague", "intents": ["aftersale"], "slots": {}, "need_clarify": true, "id": "E0159"}
+{"text": "快递怎么还没到", "category": "vague", "intents": ["logistics"], "slots": {}, "need_clarify": true, "id": "E0160"}
+{"text": "我的包裹不见了", "category": "vague", "intents": ["logistics"], "slots": {}, "need_clarify": true, "id": "E0161"}
+{"text": "想查一下物流", "category": "vague", "intents": ["logistics"], "slots": {}, "need_clarify": true, "id": "E0162"}
+{"text": "退货运费怎么算", "category": "vague", "intents": ["aftersale"], "slots": {}, "need_clarify": true, "id": "E0163"}
+{"text": "订单状态帮我看看", "category": "vague", "intents": ["order"], "slots": {}, "need_clarify": true, "id": "E0164"}
+{"text": "帮我看看买了啥", "category": "vague", "intents": ["order"], "slots": {}, "need_clarify": true, "id": "E0165"}
+{"text": "想换个货", "category": "vague", "intents": ["aftersale"], "slots": {}, "need_clarify": true, "id": "E0166"}
+{"text": "想把买的东西换个颜色", "category": "vague", "intents": ["aftersale"], "slots": {}, "need_clarify": true, "id": "E0167"}
+{"text": "这个坏了能退吗", "category": "vague", "intents": ["aftersale"], "slots": {}, "need_clarify": true, "id": "E0168"}
+{"text": "麻烦查下快递", "category": "vague", "intents": ["logistics"], "slots": {}, "need_clarify": true, "id": "E0169"}
+{"text": "钱什么时候退", "category": "vague", "intents": ["aftersale"], "slots": {}, "need_clarify": true, "id": "E0170"}
+{"text": "订单查不到", "category": "vague", "intents": ["order"], "slots": {}, "need_clarify": true, "id": "E0171"}
+{"text": "怎么退钱", "category": "vague", "intents": ["aftersale"], "slots": {}, "need_clarify": true, "id": "E0172"}
+{"text": "包裹卡住了", "category": "vague", "intents": ["logistics"], "slots": {}, "need_clarify": true, "id": "E0173"}
+{"text": "想售后", "category": "vague", "intents": ["aftersale"], "slots": {}, "need_clarify": true, "id": "E0174"}
+{"text": "帮我写个 Python 爬虫", "category": "out_of_scope", "intents": ["out_of_scope"], "slots": {}, "need_clarify": false, "id": "E0175"}
+{"text": "今天天气怎么样？", "category": "out_of_scope", "intents": ["out_of_scope"], "slots": {}, "need_clarify": false, "id": "E0176"}
+{"text": "帮我订一张去北京的机票", "category": "out_of_scope", "intents": ["out_of_scope"], "slots": {}, "need_clarify": false, "id": "E0177"}
+{"text": "推荐几部好看的电影", "category": "out_of_scope", "intents": ["out_of_scope"], "slots": {}, "need_clarify": false, "id": "E0178"}
+{"text": "怎么用 Excel 做透视表", "category": "out_of_scope", "intents": ["out_of_scope"], "slots": {}, "need_clarify": false, "id": "E0179"}
+{"text": "帮我写一篇作文", "category": "out_of_scope", "intents": ["out_of_scope"], "slots": {}, "need_clarify": false, "id": "E0180"}
+{"text": "比特币现在多少钱", "category": "out_of_scope", "intents": ["out_of_scope"], "slots": {}, "need_clarify": false, "id": "E0181"}
+{"text": "帮我翻译一段英文", "category": "out_of_scope", "intents": ["out_of_scope"], "slots": {}, "need_clarify": false, "id": "E0182"}
+{"text": "明天股市会涨吗", "category": "out_of_scope", "intents": ["out_of_scope"], "slots": {}, "need_clarify": false, "id": "E0183"}
+{"text": "帮我算一下微积分题目", "category": "out_of_scope", "intents": ["out_of_scope"], "slots": {}, "need_clarify": false, "id": "E0184"}
+{"text": "怎么减肥最快", "category": "out_of_scope", "intents": ["out_of_scope"], "slots": {}, "need_clarify": false, "id": "E0185"}
+{"text": "给我讲个笑话", "category": "out_of_scope", "intents": ["out_of_scope"], "slots": {}, "need_clarify": false, "id": "E0186"}
+{"text": "帮我做一份 PPT 大纲", "category": "out_of_scope", "intents": ["out_of_scope"], "slots": {}, "need_clarify": false, "id": "E0187"}
+{"text": "周末去哪儿玩比较好", "category": "out_of_scope", "intents": ["out_of_scope"], "slots": {}, "need_clarify": false, "id": "E0188"}
+{"text": "怎么学好英语", "category": "out_of_scope", "intents": ["out_of_scope"], "slots": {}, "need_clarify": false, "id": "E0189"}
+{"text": "帮我写封辞职信", "category": "out_of_scope", "intents": ["out_of_scope"], "slots": {}, "need_clarify": false, "id": "E0190"}
+{"text": "该怎么跟老板谈加薪", "category": "out_of_scope", "intents": ["out_of_scope"], "slots": {}, "need_clarify": false, "id": "E0191"}
+{"text": "推荐一款好玩的游戏", "category": "out_of_scope", "intents": ["out_of_scope"], "slots": {}, "need_clarify": false, "id": "E0192"}
+{"text": "怎么申请签证", "category": "out_of_scope", "intents": ["out_of_scope"], "slots": {}, "need_clarify": false, "id": "E0193"}
+{"text": "帮我规划一条旅游路线", "category": "out_of_scope", "intents": ["out_of_scope"], "slots": {}, "need_clarify": false, "id": "E0194"}
+{"text": "帮我写周报", "category": "out_of_scope", "intents": ["out_of_scope"], "slots": {}, "need_clarify": false, "id": "E0195"}
+{"text": "推荐个理财产品", "category": "out_of_scope", "intents": ["out_of_scope"], "slots": {}, "need_clarify": false, "id": "E0196"}
+{"text": "怎么考驾照", "category": "out_of_scope", "intents": ["out_of_scope"], "slots": {}, "need_clarify": false, "id": "E0197"}
+{"text": "帮我预约体检", "category": "out_of_scope", "intents": ["out_of_scope"], "slots": {}, "need_clarify": false, "id": "E0198"}
+{"text": "今天有什么新闻", "category": "out_of_scope", "intents": ["out_of_scope"], "slots": {}, "need_clarify": false, "id": "E0199"}
+{"text": "讲个历史故事", "category": "out_of_scope", "intents": ["out_of_scope"], "slots": {}, "need_clarify": false, "id": "E0200"}
+{"text": "怎么养猫", "category": "out_of_scope", "intents": ["out_of_scope"], "slots": {}, "need_clarify": false, "id": "E0201"}
+{"text": "帮我算房贷利率", "category": "out_of_scope", "intents": ["out_of_scope"], "slots": {}, "need_clarify": false, "id": "E0202"}
+{"text": "怎么做红烧肉", "category": "out_of_scope", "intents": ["out_of_scope"], "slots": {}, "need_clarify": false, "id": "E0203"}
+{"text": "推荐几本书", "category": "out_of_scope", "intents": ["out_of_scope"], "slots": {}, "need_clarify": false, "id": "E0204"}
+{"text": "帮我修图", "category": "out_of_scope", "intents": ["out_of_scope"], "slots": {}, "need_clarify": false, "id": "E0205"}
+{"text": "怎么注册公司", "category": "out_of_scope", "intents": ["out_of_scope"], "slots": {}, "need_clarify": false, "id": "E0206"}
+{"text": "帮我写简历", "category": "out_of_scope", "intents": ["out_of_scope"], "slots": {}, "need_clarify": false, "id": "E0207"}
+{"text": "学吉他要多久", "category": "out_of_scope", "intents": ["out_of_scope"], "slots": {}, "need_clarify": false, "id": "E0208"}
+{"text": "怎么戒烟", "category": "out_of_scope", "intents": ["out_of_scope"], "slots": {}, "need_clarify": false, "id": "E0209"}
+{"text": "帮我改作文", "category": "out_of_scope", "intents": ["out_of_scope"], "slots": {}, "need_clarify": false, "id": "E0210"}
+{"text": "股票怎么开户", "category": "out_of_scope", "intents": ["out_of_scope"], "slots": {}, "need_clarify": false, "id": "E0211"}
+{"text": "怎么去杭州东站", "category": "out_of_scope", "intents": ["out_of_scope"], "slots": {}, "need_clarify": false, "id": "E0212"}
+{"text": "帮我查个单词", "category": "out_of_scope", "intents": ["out_of_scope"], "slots": {}, "need_clarify": false, "id": "E0213"}
+{"text": "房间怎么除甲醛", "category": "out_of_scope", "intents": ["out_of_scope"], "slots": {}, "need_clarify": false, "id": "E0214"}
+{"text": "帮我起个网名", "category": "out_of_scope", "intents": ["out_of_scope"], "slots": {}, "need_clarify": false, "id": "E0215"}
+{"text": "怎么做短视频", "category": "out_of_scope", "intents": ["out_of_scope"], "slots": {}, "need_clarify": false, "id": "E0216"}
+{"text": "推荐个健身计划", "category": "out_of_scope", "intents": ["out_of_scope"], "slots": {}, "need_clarify": false, "id": "E0217"}
+{"text": "帮我解个方程", "category": "out_of_scope", "intents": ["out_of_scope"], "slots": {}, "need_clarify": false, "id": "E0218"}
+{"text": "怎么写论文", "category": "out_of_scope", "intents": ["out_of_scope"], "slots": {}, "need_clarify": false, "id": "E0219"}
+{"text": "机械键盘 K87多少钱？另外订单A1005到哪了", "category": "multi", "intents": ["product", "logistics"], "slots": {"order_id": "A1005"}, "need_clarify": false, "id": "E0220"}
+{"text": "我要退货，顺便问下机械键盘 K87保修期多久", "category": "multi", "intents": ["aftersale", "product"], "slots": {}, "need_clarify": false, "id": "E0221"}
+{"text": "订单A1010没收到，而且客服态度很差我要投诉", "category": "multi", "intents": ["logistics", "complaint"], "slots": {"order_id": "A1010"}, "need_clarify": false, "id": "E0222"}
+{"text": "查下订单A1044，再告诉我无线充电板怎么保修", "category": "multi", "intents": ["order", "product"], "slots": {"order_id": "A1044"}, "need_clarify": false, "id": "E0223"}
+{"text": "27 英寸 2K 显示器拆封能退吗？订单A1017在这", "category": "multi", "intents": ["product", "aftersale"], "slots": {"order_id": "A1017"}, "need_clarify": false, "id": "E0224"}
+{"text": "物流A1015太慢了，我要退款还要投诉", "category": "multi", "intents": ["logistics", "aftersale", "complaint"], "slots": {"order_id": "A1015"}, "need_clarify": false, "id": "E0225"}
+{"text": "帮我转人工，顺便查下订单A1027", "category": "multi", "intents": ["human", "order"], "slots": {"order_id": "A1027"}, "need_clarify": false, "id": "E0226"}
+{"text": "扫地机器人 X10有货吗？订单A1044什么时候能发", "category": "multi", "intents": ["product", "order"], "slots": {"order_id": "A1044"}, "need_clarify": false, "id": "E0227"}
+{"text": "订单A1011退款到账没？还有平板支架能换货吗", "category": "multi", "intents": ["order", "aftersale"], "slots": {"order_id": "A1011"}, "need_clarify": false, "id": "E0228"}
+{"text": "我要投诉物流，订单A1034一直不动", "category": "multi", "intents": ["complaint", "logistics"], "slots": {"order_id": "A1034"}, "need_clarify": false, "id": "E0229"}
+{"text": "你好，帮我查下订单A1028", "category": "multi", "intents": ["chitchat", "order"], "slots": {"order_id": "A1028"}, "need_clarify": false, "id": "E0230"}
+{"text": "机械键盘 K87和显示器哪个值得买？订单A1021能一起退吗", "category": "multi", "intents": ["product", "aftersale"], "slots": {"order_id": "A1021"}, "need_clarify": false, "id": "E0231"}
+{"text": "智能手表 S2多少钱，另外帮我转人工", "category": "multi", "intents": ["product", "human"], "slots": {}, "need_clarify": false, "id": "E0232"}
+{"text": "订单A1022物流不动了，我要退款", "category": "multi", "intents": ["logistics", "aftersale"], "slots": {"order_id": "A1022"}, "need_clarify": false, "id": "E0233"}
+{"text": "我要投诉，订单A1030退款一直不到账", "category": "multi", "intents": ["complaint", "aftersale"], "slots": {"order_id": "A1030"}, "need_clarify": false, "id": "E0234"}
+{"text": "无线充电板保修多久？订单A1026要退", "category": "multi", "intents": ["product", "aftersale"], "slots": {"order_id": "A1026"}, "need_clarify": false, "id": "E0235"}
+{"text": "帮我查订单A1041，再推荐个显示器", "category": "multi", "intents": ["order", "product"], "slots": {"order_id": "A1041"}, "need_clarify": false, "id": "E0236"}
+{"text": "物流A1005太慢，你们客服也不理我", "category": "multi", "intents": ["logistics", "complaint"], "slots": {"order_id": "A1005"}, "need_clarify": false, "id": "E0237"}
+{"text": "你好，我想查下物流", "category": "multi", "intents": ["chitchat", "logistics"], "slots": {}, "need_clarify": false, "id": "E0238"}
+{"text": "订单A1017没收到，想问下智能手表 S2怎么赔", "category": "multi", "intents": ["logistics", "aftersale"], "slots": {"order_id": "A1017"}, "need_clarify": false, "id": "E0239"}
+{"text": "游戏鼠标多少钱？另外订单A1012到哪了", "category": "multi", "intents": ["product", "logistics"], "slots": {"order_id": "A1012"}, "need_clarify": false, "id": "E0240"}
+{"text": "我要退货，顺便问下游戏鼠标保修期多久", "category": "multi", "intents": ["aftersale", "product"], "slots": {}, "need_clarify": false, "id": "E0241"}
+{"text": "订单A1045没收到，而且客服态度很差我要投诉", "category": "multi", "intents": ["logistics", "complaint"], "slots": {"order_id": "A1045"}, "need_clarify": false, "id": "E0242"}
+{"text": "查下订单A1027，再告诉我平板支架怎么保修", "category": "multi", "intents": ["order", "product"], "slots": {"order_id": "A1027"}, "need_clarify": false, "id": "E0243"}
+{"text": "便携充电宝拆封能退吗？订单A1034在这", "category": "multi", "intents": ["product", "aftersale"], "slots": {"order_id": "A1034"}, "need_clarify": false, "id": "E0244"}
+{"text": "物流A1046太慢了，我要退款还要投诉", "category": "multi", "intents": ["logistics", "aftersale", "complaint"], "slots": {"order_id": "A1046"}, "need_clarify": false, "id": "E0245"}
+{"text": "帮我转人工，顺便查下订单A1018", "category": "multi", "intents": ["human", "order"], "slots": {"order_id": "A1018"}, "need_clarify": false, "id": "E0246"}
+{"text": "无线蓝牙耳机 Pro有货吗？订单A1012什么时候能发", "category": "multi", "intents": ["product", "order"], "slots": {"order_id": "A1012"}, "need_clarify": false, "id": "E0247"}
+{"text": "订单A1018退款到账没？还有蓝牙音箱 Mini能换货吗", "category": "multi", "intents": ["order", "aftersale"], "slots": {"order_id": "A1018"}, "need_clarify": false, "id": "E0248"}
+{"text": "我要投诉物流，订单A1006一直不动", "category": "multi", "intents": ["complaint", "logistics"], "slots": {"order_id": "A1006"}, "need_clarify": false, "id": "E0249"}
+{"text": "你好，帮我查下订单A1006", "category": "multi", "intents": ["chitchat", "order"], "slots": {"order_id": "A1006"}, "need_clarify": false, "id": "E0250"}
+{"text": "智能空气炸锅和显示器哪个值得买？订单A1005能一起退吗", "category": "multi", "intents": ["product", "aftersale"], "slots": {"order_id": "A1005"}, "need_clarify": false, "id": "E0251"}
+{"text": "游戏鼠标多少钱，另外帮我转人工", "category": "multi", "intents": ["product", "human"], "slots": {}, "need_clarify": false, "id": "E0252"}
+{"text": "我要投诉，订单A1018退款一直不到账", "category": "multi", "intents": ["complaint", "aftersale"], "slots": {"order_id": "A1018"}, "need_clarify": false, "id": "E0253"}
+{"text": "智能空气炸锅保修多久？订单A1003要退", "category": "multi", "intents": ["product", "aftersale"], "slots": {"order_id": "A1003"}, "need_clarify": false, "id": "E0254"}
+{"text": "帮我查订单A1016，再推荐个家电", "category": "multi", "intents": ["order", "product"], "slots": {"order_id": "A1016"}, "need_clarify": false, "id": "E0255"}
+{"text": "物流A1017太慢，你们客服也不理我", "category": "multi", "intents": ["logistics", "complaint"], "slots": {"order_id": "A1017"}, "need_clarify": false, "id": "E0256"}
+{"text": "订单A1042没收到，想问下机械键盘 K87怎么赔", "category": "multi", "intents": ["logistics", "aftersale"], "slots": {"order_id": "A1042"}, "need_clarify": false, "id": "E0257"}
+{"text": "游戏鼠标多少钱？另外订单A1014到哪了", "category": "multi", "intents": ["product", "logistics"], "slots": {"order_id": "A1014"}, "need_clarify": false, "id": "E0258"}
+{"text": "订单A1012没收到，而且客服态度很差我要投诉", "category": "multi", "intents": ["logistics", "complaint"], "slots": {"order_id": "A1012"}, "need_clarify": false, "id": "E0259"}
+{"text": "查下订单A1002，再告诉我游戏鼠标怎么保修", "category": "multi", "intents": ["order", "product"], "slots": {"order_id": "A1002"}, "need_clarify": false, "id": "E0260"}
+{"text": "游戏鼠标拆封能退吗？订单A1001在这", "category": "multi", "intents": ["product", "aftersale"], "slots": {"order_id": "A1001"}, "need_clarify": false, "id": "E0261"}
+{"text": "物流A1034太慢了，我要退款还要投诉", "category": "multi", "intents": ["logistics", "aftersale", "complaint"], "slots": {"order_id": "A1034"}, "need_clarify": false, "id": "E0262"}
+{"text": "帮我转人工，顺便查下订单A1034", "category": "multi", "intents": ["human", "order"], "slots": {"order_id": "A1034"}, "need_clarify": false, "id": "E0263"}
+{"text": "扫地机器人 X10有货吗？订单A1030什么时候能发", "category": "multi", "intents": ["product", "order"], "slots": {"order_id": "A1030"}, "need_clarify": false, "id": "E0264"}
+{"text": "订单A1043退款到账没？还有智能手表 S2能换货吗", "category": "multi", "intents": ["order", "aftersale"], "slots": {"order_id": "A1043"}, "need_clarify": false, "id": "E0265"}
+{"text": "我要投诉物流，订单A1033一直不动", "category": "multi", "intents": ["complaint", "logistics"], "slots": {"order_id": "A1033"}, "need_clarify": false, "id": "E0266"}
+{"text": "你好，帮我查下订单A1034", "category": "multi", "intents": ["chitchat", "order"], "slots": {"order_id": "A1034"}, "need_clarify": false, "id": "E0267"}
+{"text": "游戏鼠标和显示器哪个值得买？订单A1014能一起退吗", "category": "multi", "intents": ["product", "aftersale"], "slots": {"order_id": "A1014"}, "need_clarify": false, "id": "E0268"}
+{"text": "机械键盘 K87多少钱，另外帮我转人工", "category": "multi", "intents": ["product", "human"], "slots": {}, "need_clarify": false, "id": "E0269"}
+{"text": "订单A1048物流不动了，我要退款", "category": "multi", "intents": ["logistics", "aftersale"], "slots": {"order_id": "A1048"}, "need_clarify": false, "id": "E0270"}
+{"text": "我要投诉，订单A1027退款一直不到账", "category": "multi", "intents": ["complaint", "aftersale"], "slots": {"order_id": "A1027"}, "need_clarify": false, "id": "E0271"}
+{"text": "27 英寸 2K 显示器保修多久？订单A1009要退", "category": "multi", "intents": ["product", "aftersale"], "slots": {"order_id": "A1009"}, "need_clarify": false, "id": "E0272"}
+{"text": "帮我查订单A1042，再推荐个蓝牙耳机", "category": "multi", "intents": ["order", "product"], "slots": {"order_id": "A1042"}, "need_clarify": false, "id": "E0273"}
+{"text": "物流A1029太慢，你们客服也不理我", "category": "multi", "intents": ["logistics", "complaint"], "slots": {"order_id": "A1029"}, "need_clarify": false, "id": "E0274"}
+{"text": "订单A1026没收到，想问下智能手表 S2怎么赔", "category": "multi", "intents": ["logistics", "aftersale"], "slots": {"order_id": "A1026"}, "need_clarify": false, "id": "E0275"}

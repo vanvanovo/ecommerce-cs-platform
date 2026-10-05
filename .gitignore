@@ -1,0 +1,20 @@
+# 环境与密钥（绝不入库）
+.env.local
+.env.local.*
+*.bak
+*.bak-*
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+# 模型权重（4.5GB，不入库）
+backend/models/
+# 前端
+frontend/node_modules/
+frontend/dist/
+# 缓存/日志/IDE
+.langgraph_api/
+*.log
+logs/
+.idea/

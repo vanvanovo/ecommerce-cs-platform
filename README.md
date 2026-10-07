@@ -2,8 +2,8 @@
 
 ![CI](https://github.com/vanvanovo/ecommerce-cs-platform/actions/workflows/ci.yml/badge.svg)
 
-> 从 EduAgent_Pro（教学版架构）迁移改造为电商客服业务，
-> 借鉴 SmartVoyage 的 A2A / MCP 工程模式。
+> 以中型电商客服业务为蓝本的企业场景复刻：在 RAG 知识库之上构建多 Agent 智能客服平台
+> （业务系统以模拟 OMS/物流/库存接口替代）。架构自教学版底座重构而来，采用 A2A / MCP 工程模式。
 >
 > **技术栈**：LangGraph + FastAPI + Vue3/Element Plus + PostgreSQL + Milvus + Redis + python-a2a + MCP(FastMCP) + 本地 Qwen / DeepSeek 混合路由
 
